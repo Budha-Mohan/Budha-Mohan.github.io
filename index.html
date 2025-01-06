@@ -13,18 +13,20 @@
         }
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
             background-color: #fff;
             border-bottom: 1px solid #ddd;
         }
-        header h1 {
-            margin: 0;
+        header nav {
+            display: flex;
+            gap: 30px;
         }
         header nav a {
-            margin: 0 15px;
             text-decoration: none;
             color: #333;
+            font-weight: bold;
         }
         .container {
             display: flex;
@@ -40,6 +42,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 20px;
         }
         .sidebar h2 {
@@ -51,7 +54,7 @@
         }
         .links {
             text-align: left;
-            padding-left: 20px;
+            margin-top: 20px;
         }
         .links a {
             display: flex;
@@ -80,7 +83,6 @@
 </head>
 <body>
     <header>
-        <h1>Mohan Budha</h1>
         <nav>
             <a href="#">Publications</a>
             <a href="#">Projects</a>
@@ -94,7 +96,7 @@
             <!-- Profile Image -->
             <img src="pp.jpg" alt="Mohan Budha">
             <h2>Mohan Budha</h2>
-            <p>Senior year in physicis, AI and ML enthusiast</p>
+            <p>Senior year in physics, AI and ML enthusiast</p>
             <!-- Links -->
             <div class="links">
                 <a href="mailto:mohanbudha000@gmail.com"><img src="gmail.png" alt=""> Email</a>
@@ -105,8 +107,8 @@
         </div>
         <div class="main-content">
             <h2>About me</h2>
-            <p>I am a Research fellow  at <a href="https://www.facebook.com/holographichimalaya">Holographic Himalaya </a>, working on Traffic optimization via Random Matrix Theory (RMT). Previously, I was a Fuse AI Fellow at <a href="https://fuse.ai/ai-fellowship/nepal/">Fusemachines</a>.</p>
-            <p>Today, my research and project interests are broadly on the interplay of Quantum Machine Learning(QML) with a particular emphasis on model learning, quantum optimal control, and architectures for scalable quantum solutions.</p>
+            <p>I am a Research fellow at <a href="https://www.facebook.com/holographichimalaya">Holographic Himalaya</a>, working on Traffic optimization via Random Matrix Theory (RMT). Previously, I was a Fuse AI Fellow at <a href="https://fuse.ai/ai-fellowship/nepal/">Fusemachines</a>.</p>
+            <p>Today, my research and project interests are broadly on the interplay of Quantum Machine Learning (QML) with a particular emphasis on model learning, quantum optimal control, and architectures for scalable quantum solutions.</p>
         </div>
     </div>
 </body>
