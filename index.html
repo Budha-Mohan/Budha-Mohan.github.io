@@ -27,7 +27,7 @@
             box-sizing: border-box;
         }
         nav a {
-            felx: 1;
+            flex: 1;
             color: white;
             padding: 14px 0px;
             text-decoration: none;
@@ -50,7 +50,7 @@
         .bio img {
             width: 100%; /* Keeps the original width */
             height: auto; /* Keeps the original height */
-            diaplay: block;
+            display: block;
             margin: 0 auto; /* Ensures no automatic resizing */
             border-radius: 0; /* Removes any rounded corners */
         }
@@ -86,13 +86,26 @@
         <a href="#projects">Projects</a>
         <a href="#news">News</a>
         <a href="cv.pdf" target="_blank">CV</a>
-        
     </nav>
     <div id="home" class="container">
-        <div class="bio">
-            <img src="pp.jpg" alt="Profile Picture">
-            <h2>About Me</h2>
-            <p>Hello! I am Mohan Budha. Welcome to my portfolio where I share my research, projects, and updates.</p>
+        <div class="bio" style="display: flex; align-items: center;">
+            <div style="flex: 1; text-align: center;">
+                <img src="pp.jpg" alt="Profile Picture">
+            </div>
+            <div style="flex: 2; padding-left: 20px;">
+                <h2>Mohan Budha</h2>
+                <p><strong>Education:</strong> Ph.D. in Computational Physics</p>
+                <p><strong>University:</strong> Tribhuvan University</p>
+                <p><strong>Email:</strong> <a href="mailto:mohan.budha@example.com">mohan.budha@example.com</a></p>
+            </div>
+        </div>
+        <div id="news" style="margin-top: 40px;">
+            <h2>News</h2>
+            <ul>
+                <li><strong>2025-01-01</strong>: Started working on an exciting project related to disease modeling.</li>
+                <li><strong>2024-12-01</strong>: Published a new paper on "Quantum Optimization of Chaotic Systems." Check it out <a href="https://example.com" target="_blank">here</a>.</li>
+                <li><strong>2024-10-15</strong>: Invited to give a talk at the Computational Physics Conference 2024.</li>
+            </ul>
         </div>
         <div class="social-media">
             <h3>Connect with me:</h3>
@@ -112,4 +125,3 @@
     </footer>
 </body>
 </html>
-
