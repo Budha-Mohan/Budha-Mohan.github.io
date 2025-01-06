@@ -3,137 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohan Budha</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ronan Gautier</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
             background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        nav a {
-            text-decoration: none;
             color: #333;
-            margin: 0 15px;
-            padding: 15px 0;
-            font-weight: bold;
         }
-
-        nav a:hover {
-            color: #007bff;
-        }
-
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-
-        .profile {
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
             display: flex;
-            align-items: center;
-            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
         }
-
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
         }
-
-        .profile-info {
-            flex: 1;
+        nav a:hover {
+            text-decoration: underline;
         }
-
-        .profile-info h2 {
-            margin-top: 0;
+        .content {
+            line-height: 1.6;
         }
-
-        .profile-info ul {
-            list-style: none;
-            padding: 0;
+        .content h2 {
+            margin-top: 20px;
+        }
+        .content p {
             margin: 10px 0;
         }
-
-        .profile-info ul li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        .about {
-            margin-top: 40px;
-        }
-
         footer {
-            background-color: #f4f4f4;
             text-align: center;
-            padding: 10px;
             margin-top: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Mohan Budha</h1>
-    </header>
-
-    <nav>
-        <a href="#">Publications</a>
-        <a href="#">Projects</a>
-        <a href="#">Blog Posts</a>
-        <a href="#">CV</a>
-    </nav>
-
     <div class="container">
-        <div class="profile">
-            <img src="https://via.placeholder.com/150" alt="Mohan Budha">
-            <div class="profile-info">
-                <h2>Quantum physicist, quantum error correction for superconducting qubits</h2>
-                <ul>
-                    <li><strong>Institution:</strong> Alice & Bob</li>
-                    <li><a href="mailto:email@example.com">Email</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Bluesky</a></li>
-                    <li><a href="#">X</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="about">
-            <h2>About me</h2>
-            <p>I am a Research Scientist at <a href="#">Alice & Bob</a>, working on the theory of superconducting circuits and quantum error correction for bosonic codes. Previously, I was a PhD student in the <a href="#">Quantic team of Inria</a> under the supervision of <a href="#">Alain Sarlette</a> and <a href="#">Mazyar Mirrahimi</a>, working on the stabilization and control of cat qubits. During my PhD, I also stayed 4 months in the <a href="#">group led by Alexandre Blais</a> to work on the theory of superconducting devices.</p>
-
-            <p>I co-created and maintain <a href="#">Dynamiqs</a>, an open-source library that provides simulation tools for the time-dynamics of quantum systems, based on <a href="#">JAX</a>.</p>
-
+        <header>
+            <h1>Ronan Gautier</h1>
+        </header>
+        <nav>
+            <a href="#publications">Publications</a>
+            <a href="#talks">Talks</a>
+            <a href="#software">Software</a>
+            <a href="#blog">Blog Posts</a>
+            <a href="#cv">CV</a>
+            <a href="#about">About me</a>
+        </nav>
+        <div class="content">
+            <h2 id="about">About me</h2>
+            <p>I am a Research Scientist at Alice & Bob, working on the theory of superconducting circuits and quantum error correction for bosonic codes. Previously, I was a PhD student in the Quantic team of Inria under the supervision of Alain Sarlette and Mazyar Mirrahimi, working on the stabilization and control of cat qubits. During my PhD, I also stayed 4 months in the group led by Alexandre Blais to work on the theory of superconducting devices.</p>
+            <p>I co-created and maintain Dynamiqs, an open-source library that provides simulation tools for the time-dynamics of quantum systems, based on JAX.</p>
             <p>Today, my research interests are broadly on the interplay of superconducting circuits with quantum error correction, with a particular emphasis on model learning, quantum optimal control, and architectures for scalable quantum error correction.</p>
+            <h2 id="publications">Publications</h2>
+            <p>Details about publications will be listed here.</p>
+            <h2 id="talks">Talks</h2>
+            <p>Details about talks will be listed here.</p>
+            <h2 id="software">Software</h2>
+            <p>Details about software projects will be listed here.</p>
+            <h2 id="blog">Blog Posts</h2>
+            <p>Details about blog posts will be listed here.</p>
+            <h2 id="cv">CV</h2>
+            <p>Details about CV will be listed here.</p>
         </div>
+        <footer>
+            <p>Contact: <a href="mailto:email@example.com">email@example.com</a> | <a href="https://scholar.google.com">Google Scholar</a> | <a href="https://github.com">Github</a> | <a href="https://bluesky.com">Bluesky</a></p>
+        </footer>
     </div>
-
-    <footer>
-        &copy; 2025 Mohan Budha
-    </footer>
 </body>
 </html>
