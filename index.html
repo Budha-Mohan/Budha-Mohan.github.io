@@ -3,37 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Mohan Budha - Research fellow, AI and ML enthusiast.">
-    <meta name="author" content="Mohan Budha">
     <title>Mohan Budha</title>
     <style>
-        /* Base Styling */
         :root {
             --primary-color: #007bff;
             --text-color: #333;
-            --light-gray: #f9f9f9;
+            --bg-color: #f9f9f9;
             --border-color: #ddd;
-            --secondary-text-color: #666;
         }
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--light-gray);
-            color: var(--text-color);
-            line-height: 1.6;
+            background-color: var(--bg-color);
         }
-
-        a {
-            text-decoration: none;
-            color: var(--primary-color);
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
         header {
             display: flex;
             justify-content: space-between;
@@ -42,22 +25,23 @@
             background-color: #fff;
             border-bottom: 1px solid var(--border-color);
         }
-
         header h1 {
             margin: 0;
             font-size: 24px;
             color: var(--text-color);
         }
-
         nav {
             display: flex;
             gap: 20px;
         }
-
         nav a {
+            text-decoration: none;
+            color: var(--text-color);
             font-weight: bold;
         }
-
+        nav a:hover {
+            color: var(--primary-color);
+        }
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -66,16 +50,11 @@
             padding: 20px;
             gap: 20px;
         }
-
         .sidebar {
-            flex: 1 1 25%;
+            flex: 1;
+            max-width: 300px;
             text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
         }
-
         .sidebar img {
             width: 150px;
             height: 150px;
@@ -83,69 +62,47 @@
             object-fit: cover;
             margin-bottom: 20px;
         }
-
         .sidebar h2 {
             margin: 10px 0;
             font-size: 20px;
         }
-
         .sidebar p {
-            color: var(--secondary-text-color);
-            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
         }
-
         .links {
-            margin-top: 20px;
             text-align: left;
+            margin-top: 20px;
         }
-
         .links a {
             display: flex;
             align-items: center;
             margin: 10px 0;
+            text-decoration: none;
             color: var(--primary-color);
-            font-size: 14px;
         }
-
         .links a img {
             width: 20px;
             height: 20px;
             margin-right: 10px;
         }
-
         .main-content {
-            flex: 1 1 70%;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
+            flex: 2;
+            min-width: 300px;
         }
-
         .main-content h2 {
             margin-top: 0;
-            font-size: 22px;
         }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-top: 1px solid var(--border-color);
-            margin-top: 40px;
-        }
-
-        .footer p {
-            margin: 0;
-            color: var(--secondary-text-color);
-            font-size: 14px;
+        .main-content a {
+            color: var(--primary-color);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <h1>Mohan Budha</h1>
-        <nav aria-label="Main Navigation">
+        <nav>
             <a href="#">Publications</a>
             <a href="#">Projects</a>
             <a href="#">Teaching</a>
@@ -153,52 +110,25 @@
             <a href="cv.pdf" target="_blank">CV</a>
         </nav>
     </header>
-
-    <!-- Main Container -->
     <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar" aria-label="Profile Sidebar">
-            <img src="pp.jpg" alt="Profile picture of Mohan Budha">
+        <div class="sidebar">
+            <!-- Profile Image -->
+            <img src="pp.jpg" alt="Mohan Budha">
             <h2>Mohan Budha</h2>
             <p>Senior year in physics, AI and ML enthusiast</p>
+            <!-- Links -->
             <div class="links">
-                <a href="mailto:mohanbudha000@gmail.com">
-                    <img src="gmail.png" alt="Gmail Icon"> Email
-                </a>
-                <a href="https://www.linkedin.com/in/mohan-budha/">
-                    <img src="linkedin.png" alt="LinkedIn Icon"> LinkedIn
-                </a>
-                <a href="https://x.com/Mohan___Budha">
-                    <img src="X.png" alt="X (Twitter) Icon"> X
-                </a>
-                <a href="https://github.com/Budha-Mohan">
-                    <img src="Github.png" alt="GitHub Icon"> GitHub
-                </a>
+                <a href="mailto:mohanbudha000@gmail.com"><img src="gmail.png" alt=""> Email</a>
+                <a href="https://www.linkedin.com/in/mohan-budha/"><img src="linkedin.png" alt=""> Linkedin</a>
+                <a href="https://x.com/Mohan___Budha"><img src="X.png" alt=""> X</a>
+                <a href="https://github.com/Budha-Mohan"><img src="Github.png" alt=""> GitHub</a>
             </div>
-        </aside>
-
-        <!-- Main Content -->
-        <section class="main-content" aria-label="About Me">
-            <h2>About Me</h2>
-            <p>
-                I am a Research fellow at 
-                <a href="https://www.facebook.com/holographichimalaya" target="_blank">Holographic Himalaya</a>, 
-                working on Traffic optimization via Random Matrix Theory (RMT). 
-                Previously, I was a Fuse AI Fellow at 
-                <a href="https://fuse.ai/ai-fellowship/nepal/" target="_blank">Fusemachines</a>.
-            </p>
-            <p>
-                Today, my research and project interests are broadly on the interplay of Quantum Machine Learning (QML) 
-                with a particular emphasis on model learning, quantum optimal control, and architectures for scalable quantum solutions.
-            </p>
-        </section>
+        </div>
+        <div class="main-content">
+            <h2>About me</h2>
+            <p>I am a Research fellow at <a href="https://www.facebook.com/holographichimalaya">Holographic Himalaya</a>, working on Traffic optimization via Random Matrix Theory (RMT). Previously, I was a Fuse AI Fellow at <a href="https://fuse.ai/ai-fellowship/nepal/">Fusemachines</a>.</p>
+            <p>Today, my research and project interests are broadly on the interplay of Quantum Machine Learning (QML) with a particular emphasis on model learning, quantum optimal control, and architectures for scalable quantum solutions.</p>
+        </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Mohan Budha. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
-
- 
