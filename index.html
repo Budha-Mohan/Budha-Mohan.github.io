@@ -43,6 +43,27 @@
             display: flex;
             gap: 24px;
         }
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center;
+            }
+            nav {
+                position: static; /* Make nav flow naturally */
+                transform: none; /* Remove centering transform */
+                margin-top: 10px; /* Add space between title and nav */
+                flex-wrap: wrap; /* Allow navigation items to wrap */
+                justify-content: center; /* Center nav links */
+                gap: 12px; /* Adjust spacing for smaller screens */
+            }
+            nav a {
+                font-size: 14px; /* Reduce font size for smaller screens */
+            }
+            header h1 {
+                font-size: 24px; /* Reduce the font size of the title */
+            }
+        }
         nav a {
             text-decoration: none;
             color: var(--text-color);
