@@ -25,6 +25,7 @@
             padding: 10px 20px;
             background-color: #fff;
             border-bottom: 1px solid var(--border-color);
+            position: relative;
         }
         header a {
             text-decoration: none; /* Remove the underline */
@@ -33,12 +34,13 @@
         header h1 {
             margin: 0;
             font-size: 24px;
-            text-align: center;
             color: var(--text-color);
         }
         nav {
+            position: absolute; /* Position nav in the center of the header */
+            left: 50%; /* Move the nav to the horizontal center */
+            transform: translateX(-50%); /* Adjust for centering */
             display: flex;
-            justify-content: center;
             gap: 20px;
         }
         nav a {
