@@ -193,7 +193,7 @@
         </nav>
     </header>
     <!-- Projects Section -->
-    <div id="projects-container">
+    <div id="projects-container" style="display: none;">
         <h2>Projects</h2>
         <div class="project">
             <h3>AI-Driven Maths Assistant</h3>
@@ -211,18 +211,21 @@
         </div>
     </div>
     <script>
-        // JavaScript to handle showing/hiding the projects section
+        // Function to show the projects section and hide others
+        function showSection(sectionId) {
+            const sections = ["projects-container", "about-me", "latest-news"]; // List of all section IDs
+            sections.forEach(id => {
+                const section = document.getElementById(id);
+                section.style.display = (id === sectionId) ? "block" : "none"; // Show only the selected section
+            });
+        }
+        // Add event listener for the Projects link
         document.getElementById("projects-link").addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent the default link behavior
-            const projectsContainer = document.getElementById("projects-container");
-            // Toggle visibility
-            if (projectsContainer.style.display === "none" || projectsContainer.style.display === "") {
-                projectsContainer.style.display = "block"; // Show projects
-            } else {
-                projectsContainer.style.display = "none"; // Hide projects
-            }
+            event.preventDefault(); // Prevent default link behavior
+            showSection("projects-container"); // Show only the Projects section
         });
     </script>
+
 
     
     <div class="container">
