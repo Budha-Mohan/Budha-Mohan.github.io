@@ -186,7 +186,7 @@
         <a href="#about-me"><h1>Mohan Budha</h1></a>
         <nav>
             <a href="#">Publications</a>
-            <a href="#">Projects</a>
+            <a href="#" id="projects-link">Projects</a>
             <a href="#">Teaching</a>
 <!--             <a href="#">Blog Posts</a> -->
             <a href="cv.pdf" target="_blank">CV</a>
@@ -211,14 +211,19 @@
         </div>
     </div>
     <script>
-        // JavaScript to handle showing/hiding the projects
-        document.getElementById("projects-link").addEventListener("click", function () {const projectsContainer = document.getElementById("projects-container");
-                                                                                        // Toggle visibility
-                                                                                        if (projectsContainer.style.display === "none" || projectsContainer.style.display === "") {projectsContainer.style.display = "block";
-                                                                                                                                                                                   // Show projects } else {projectsContainer.style.display = "none"; // Hide projects
-                                                                                                                                                                                  }
-                                                                                       });
+        // JavaScript to handle showing/hiding the projects section
+        document.getElementById("projects-link").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            const projectsContainer = document.getElementById("projects-container");
+            // Toggle visibility
+            if (projectsContainer.style.display === "none" || projectsContainer.style.display === "") {
+                projectsContainer.style.display = "block"; // Show projects
+            } else {
+                projectsContainer.style.display = "none"; // Hide projects
+            }
+        });
     </script>
+
     
     <div class="container">
         <div class="sidebar">
